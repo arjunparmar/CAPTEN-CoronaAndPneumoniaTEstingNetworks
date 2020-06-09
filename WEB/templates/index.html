@@ -1,0 +1,109 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+		{% load static %}
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>COVID-19 Detection</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+			<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+			<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+			<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+			<link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">				
+			<link rel="stylesheet" href="{% static 'css/nice-select.css' %}">							
+			<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+			<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">			
+			<link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">			
+			<link rel="stylesheet" href="{% static 'css/main.css' %}">
+		</head>
+		<body>	
+		  <header id="header">
+	  		<div class="container main-menu">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="#"><img src="static/img/logo.png" alt="" title="" /></a>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li><a href="{% url 'home' %}">Home</a></li>
+			          <li><a href="{% url 'admin:index' %}">Admin</a></li>
+			          <li><a href="{% url 'predict:form' %}">Predict</a></li>
+			          <li><a href="#contact">Contact</a></li>
+			        </ul>
+			      </nav><!-- #nav-menu-container -->		    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-8 col-md-12">
+							<h1>
+								We Care for Your Health
+								Every Moment		
+							</h1>
+							<h3 class="h3t-5 pb-5 text-white">
+								We have built a system wherein you are required to upload a patient's chest X-ray image and using AI it will tell whether the patient is infected with COVID-19 or not.
+							</h3>
+							<a href="{% url 'predict:form' %}" class="primary-btn text-uppercase">Get Started</a>
+						</div>										
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->
+			{%block body_block %}
+			
+			{% endblock %}
+			<!-- End facilities Area -->
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap" id = "contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12  col-md-12">
+							<div class="single-footer-widget mail-chimp text-center">
+								<h2 class="mb-20">
+								<a href="https://github.com/arjunparmar/COVID-19">Project Github Link</a></h2>
+								</div>
+						</div>							
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+
+
+			<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+			<script src="{% static 'js/popper.min.static/js' %}"></script>
+			<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+ 			<script src="{% static 'js/jquery-ui.js' %}"></script>					
+  			<script src="{% static 'js/easing.min.js' %}"></script>			
+			<script src="{% static 'js/hoverIntent.js' %}"></script>
+			<script src="{% static 'js/superfish.min.js' %}"></script>	
+			<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+			<script src="{% static 'js/jquery.magnific-popup.min.j' %}s"></script>	
+    		<script src="{% static 'js/jquery.tabs.min.js' %}"></script>						
+			<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>	
+			<script src="{% static 'js/owl.carousel.min.js' %}"></script>									
+			<script src="{% static 'js/mail-script.js' %}"></script>	
+			<script src="{% static 'js/main.js' %}"></script>	
+		</body>
+	</html>
