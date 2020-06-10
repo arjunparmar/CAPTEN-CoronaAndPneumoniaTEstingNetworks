@@ -1,3 +1,3 @@
-[![GitHub issues]https://img.shields.io/github/issues/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks]
-# COVID19-upgraded
+[![GitHub issues](https://img.shields.io/github/issues/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks?style=for-the-badge)](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/issues) [![GitHub forks](https://img.shields.io/github/forks/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks?style=for-the-badge)](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/network) [![GitHub stars](https://img.shields.io/github/stars/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks?style=for-the-badge)](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/stargazers) [![GitHub license](https://img.shields.io/github/license/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks?style=for-the-badge)](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/LICENSE)
+# CAPTEN-CoronaAndPneumoniaTEstingNetworks
 Normal Vs Pneumonia Vs COVID19
