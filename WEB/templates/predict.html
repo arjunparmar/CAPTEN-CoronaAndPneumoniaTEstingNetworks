@@ -3,7 +3,8 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
-    <title>COVID-19 Detection</title> 
+    <title>CAPTEN(Corona And Pneumonia TEsting Network)</title>
+    <meta name="description" content="CAPTEN is a utility system which shows whether a patient is infected with CoronaVirus or Pneumonia or is not infected at all based on the uploaded image of his/her chest X-Ray">
     <style>
         #id_predictIt {
 					width : 50px;
@@ -49,31 +50,47 @@
                     box-shadow: 0 5px #666;
                     transform: translateY(4px);
                 }
+                .row {
+                    display : flex;
+                }
+                .column {
+                    flex : 25%;
+                    padding : 5px;
+                }
     </style>
 </head> 
 <body>
     {% block body_block %}
     <div class="container">
         <div class="row justify-content-between align-items-center pb-120 appointment-wrap">
-            <form method = "post" enctype="multipart/form-data" id="start"> 
+            <form method = "post" enctype="multipart/form-data" id="start" style="display: inline-block;"> 
                 {% csrf_token %} 
                 {{ form.as_p }} 
                 <button type="submit" class="primary-btn text-uppercase">Upload here</button> 
             </form> 
             {% if image_show %}
-            <img src = "{{ image_show.uploads.url }}" alt="original image" style="display: inline-block; margin-left: 5%; margin-right: 7%; padding-top: 5%; width: 300px; height: 300px; ">
-            <br>
+            <img src = "{{ image_show.uploads.url }}" alt="original image" style="display: inline-block; padding-top: 5%; width: 300px; height: 300px; ">
             {% endif %}
-            <form method = "POST">
+            <form method = "POST" style="display: inline-block;">
                 {% csrf_token %}
                 {{ temp_form.as_p }}
                 <input type = "submit" name="do_predict" value="Predict" class="primary-btn text-uppercase" style="background-color: blue;">
             </form>
             <br>
-        {% if prediction %}
-            <!-- <div class="col-md-5"></div> -->
-            <div class="col-md-8 text-center">
-                <h1 style="text-align: center; margin-top: 5%; margin-left: 10%; ">{{ prediction }} </h1>
+            {% if flag %}
+            <div class="row justify-content-center" style="margin-top: 3%">
+                <div class="col-lg-6 col-md-12 order-lg-1">
+                    <h3 style="margin-top: 30%;">This is a gradcam image which shows extracted features from the uploaded image.</h3>
+                </div>
+                <div class="col-lg-6 col-md-12 justify-content-center order-lg-2">
+                    <img src = "{{ gradcam_image.uploads.url }}" alt="gradcam image" style="width: 500px; height: 400px; margin-left: auto; margin-right: auto; display: inline-block;">
+                </div>
+            </div>
+            <br>
+            {% endif %}
+            {% if prediction %}
+            <div class="col-lg-12 col-md-8 justify-content-center">
+                <h1 style=" margin-top: 3%; text-align: center; ">{{ prediction }} </h1>
             </div>
             <!-- <div class="col-md-2"></div> -->
             {% endif %}

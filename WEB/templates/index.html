@@ -15,8 +15,8 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>COVID-19 Detection</title>
-
+		<title>CAPTEN(Corona And Pneumonia TEsting Network)</title>
+		<meta name="description" content="CAPTEN is a utility system which shows whether a patient is infected with CoronaVirus or Pneumonia or is not infected at all based on the uploaded image of his/her chest X-Ray">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
 			CSS
@@ -56,13 +56,12 @@
 				<div class="overlay overlay-bg"></div>	
 				<div class="container">
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
-						<div class="banner-content col-lg-8 col-md-12">
-							<h1>
-								We Care for Your Health
-								Every Moment		
+						<div class="banner-content col-lg-12 col-md-12">
+							<h1 style="font-family: 'Times New Roman', Times, serif;">
+								CAPTEN<br/><font style="color: turquoise;">Corona And Pneumonia TEsting Network</font>
 							</h1>
 							<h3 class="h3t-5 pb-5 text-white">
-								We have built a system wherein you are required to upload a patient's chest X-ray image and using AI it will tell whether the patient is infected with COVID-19 or not.
+								We have built a system wherein you are required to upload a patient's chest X-ray image and using AI it will tell whether the patient is infected with COVID-19 or pneumonia or is not infected at all.
 							</h3>
 							<a href="{% url 'predict:form' %}" class="primary-btn text-uppercase">Get Started</a>
 						</div>										
