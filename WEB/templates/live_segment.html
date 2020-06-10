@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Welcome to GISA</title> 
+    <!-- <style>
+        #my_image {
+            display: none;
+        }
+    </style> -->
+</head> 
+<body>
+    {% block body_block %} 
+    <form method = "post" enctype="multipart/form-data"> 
+        {% csrf_token %} 
+        {{ form.as_p }} 
+        <input type="Submit" name="submit" value="Submit"/>
+    </form> 
+    {% if not submitbutton %}
+    <img src = "{% url 'gisa:live_segment_temp' %}" alt="original image" id = "my_image">
+    {% endif %}
+    <div class = "slidecontainer">
+        <label for="myRangeHl" >Hue(lower bound):<span id="hue_l_op"></span></label>
+        <input type="range" min="0" max="255" value="0" class="slider" id="myRangeHl"><br><br>
+        <label for="myRangeSl" >Saturation(lower bound): <span id="saturation_l_op"></span></label>
+        <input type="range" min="0" max="255" value="0" class="slider" id="myRangeSl"><br><br>
+        <label for="myRangeVl" >value(lower bound): <span id="value_l_op"></span></label>
+        <input type="range" min="0" max="255" value="0" class="slider" id="myRangeVl"><br><br>
+        <label for="myRangeHh">Hue(upper bound): <span id="hue_h_op"></span></label>
+        <input type="range" min="0" max="255" value="255" class="slider" id="myRangeHh" ><br><br>
+        <label for="myRangeSh" >Saturation(upper bound): <span id="saturation_h_op"></span></label>
+        <input type="range" min="0" max="255" value="255" class="slider" id="myRangeSh"><br><br>
+        <label for="myRangeVh" >Value(upper bound):<span id="value_h_op"></span></label>
+        <input type="range" min="0" max="255" value="255" class="slider" id="myRangeVh"><br><br>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('.slider').on("input", function (e) {
+            var hue_lower = document.getElementById("myRangeHl").value;
+            var saturation_lower = document.getElementById('myRangeSl').value;
+            var value_lower = document.getElementById('myRangeVl').value;
+            var hue_higher = document.getElementById("myRangeHh").value;
+            var saturation_higher = document.getElementById('myRangeSh').value;
+            var value_higher = document.getElementById('myRangeVh').value;
+            
+            var data_out = {
+            "H_l" : hue_lower,
+            "S_l" : saturation_lower,
+            "V_l" : value_lower,
+
+            "H_h" : hue_higher,
+            "S_h" : saturation_higher,
+            "V_h" : value_higher
+            }
+
+            // console.log(data_out)
+
+            $.ajax( {
+                method : 'GET',
+                url : '{% url "gisa:live_segment_temp" %}',
+                data : data_out,
+                datatype : 'json',
+                success : function(data_out) {
+                    console.log('Slider value sent success');
+                    location.reload();
+                },
+                error : function() {
+                    console.log("Error during ajax post");
+                }
+            });
+        })
+    </script>
+<!-- <script type = "text/javascript" src = "../main.js"></script> -->
+{% endblock %}
+</body> 
+</html> 

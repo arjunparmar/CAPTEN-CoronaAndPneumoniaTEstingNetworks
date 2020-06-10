@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Welcome to GISA</title> 
+    <!-- <style>
+        #my_image {
+            display: none;
+        }
+    </style> -->
+</head> 
+<body>
+    {% block body_block %} 
+    <form method = "post" enctype="multipart/form-data"> 
+        {% csrf_token %} 
+        {{ form.as_p }} 
+        <input type="Submit" name="submit" value="Submit"/>
+    </form> 
+    {% if not submitbutton %}
+    <img src = "{% url 'gisa:live_temp' %}" alt="original image" id = "my_image">
+    {% endif %}
+    {% endblock %}
+    <script>
+        function my_func() {
+            document.getElementById("my_image").style.display = "block";
+        }
+    </script>
+</body> 
+</html> 
+

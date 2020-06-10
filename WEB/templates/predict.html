@@ -1,0 +1,86 @@
+{% extends 'index.html' %}
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>COVID-19 Detection</title> 
+    <style>
+        #id_predictIt {
+					width : 50px;
+					font-size: large;
+					
+				}
+
+				.show {
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: inline-block;
+                    padding-top: 5%;
+                    margin-bottom: 5%;
+                }
+
+				img {
+					margin-top: 10px;
+				}
+                form p{
+                    font-size: larger;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                label {
+                    font-size: 50px;
+                }
+                .button {
+                    padding: 15px 25px;
+                    font-size: 24px;
+                    text-align: center;
+                    cursor: pointer;
+                    outline: none;
+                    color: #fff;
+                    background-color: #4CAF50 !important;
+                    border: none;
+                    border-radius: 15px;
+                    box-shadow: 0 9px #999;
+                }
+
+                .button:hover {background-color: #3e8e41 !important}
+
+                .button:active {
+                    background-color: #3e8e41 !important;
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
+                }
+    </style>
+</head> 
+<body>
+    {% block body_block %}
+    <div class="container">
+        <div class="row justify-content-between align-items-center pb-120 appointment-wrap">
+            <form method = "post" enctype="multipart/form-data" id="start"> 
+                {% csrf_token %} 
+                {{ form.as_p }} 
+                <button type="submit" class="primary-btn text-uppercase">Upload here</button> 
+            </form> 
+            {% if image_show %}
+            <img src = "{{ image_show.uploads.url }}" alt="original image" style="display: inline-block; margin-left: 5%; margin-right: 7%; padding-top: 5%; width: 300px; height: 300px; ">
+            <br>
+            {% endif %}
+            <form method = "POST">
+                {% csrf_token %}
+                {{ temp_form.as_p }}
+                <input type = "submit" name="do_predict" value="Predict" class="primary-btn text-uppercase" style="background-color: blue;">
+            </form>
+            <br>
+        {% if prediction %}
+            <!-- <div class="col-md-5"></div> -->
+            <div class="col-md-8 text-center">
+                <h1 style="text-align: center; margin-top: 5%; margin-left: 10%; ">{{ prediction }} </h1>
+            </div>
+            <!-- <div class="col-md-2"></div> -->
+            {% endif %}
+        </div>
+    </div>
+    {% endblock %}
+    
+</body> 
+</html> 
+
