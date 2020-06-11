@@ -24,4 +24,4 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.jpeg)|
 |Class: Pneumonia|GradCAM|
-|||
+|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VP61x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VP61.jpeg)|
