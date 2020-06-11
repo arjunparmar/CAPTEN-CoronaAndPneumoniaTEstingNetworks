@@ -42,3 +42,5 @@ It is extremely useful for measuring Recall, Precision, Specificity, Accuracy an
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.jpeg)|
 |**Class: 'Pneumonia'**|**GradCAM**|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VP61x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VP61.jpeg)|
+## Final testing video of CAPTEN
+[![WEB-GUI](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/ScreenStart.png)](https://youtu.be/oNuQ3tcgOWs)
