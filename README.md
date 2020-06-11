@@ -44,7 +44,7 @@ If the network is not activating around the proper patterns/objects in the image
 -->```Our network hasn’t properly learned the underlying patterns in our dataset```<br/>
 -->```Our training procedure needs to be revisited```<br/>
 -->```We may need to collect additional data ```<br/>
-And most importantly, our model is not ready for deployment.<br/>
+-->```And most importantly, our model is not ready for deployment.```<br/>
 |Class: 'COVID19'|GradCAM|
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.jpeg)|
