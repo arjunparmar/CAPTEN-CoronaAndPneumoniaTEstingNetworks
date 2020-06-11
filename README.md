@@ -6,3 +6,9 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 |Train Acc:98.17%|Test Acc:96.89%|
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Accuracy.png)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Loss.png)|<br/>
+# Conclusion
+##Confusion Matrix
+|159|0|0|
+|:---:|:---:||
+|**03**|**39**|**41**|
+|**01**|**06**|**153**|<br/>
