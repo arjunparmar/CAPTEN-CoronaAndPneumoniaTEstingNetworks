@@ -29,14 +29,14 @@ It is extremely useful for measuring Recall, Precision, Specificity, Accuracy an
 ## Report:
 ![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/precison.png)<br/>
 ![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/recall.png)<br/>
-![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/F1-measure.png)<br/>
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/F-measure.png)<br/>
 |Class|Precision|Recall|F1 Score|
 |:---:|:---:|:---:|:---:|
 |**COVID19**|**0.98**|**0.99**|**0.98**|
 |**NORMAL**|**0.87**|**0.47**|**0.61**|
 |**PNEUMONIA**|**0.79**|**0.96**|**0.86**|<br/>
 ## GradCAM of input images:
-|Class: 'COVID19'|GradCAMhttps://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/CM.png|
+|Class: 'COVID19'|GradCAM|
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.jpeg)|
 |**Class: 'Pneumonia'**|**GradCAM**|
