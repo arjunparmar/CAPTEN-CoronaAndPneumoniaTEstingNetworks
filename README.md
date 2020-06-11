@@ -5,4 +5,4 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 # Result
 |Train Acc:98.17%|Test Acc:96.89%|
 |:---:|:---:|
-|![](https://github.com/arjunparmar/COVID-19/blob/master/Data/accuracy.png)|![](https://github.com/arjunparmar/COVID-19/blob/master/Data/loss.png)|<br/>
+|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Accuracy.png)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Loss.png)|<br/>
