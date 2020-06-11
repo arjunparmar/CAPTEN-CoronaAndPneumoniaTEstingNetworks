@@ -8,6 +8,10 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Accuracy.png)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Loss.png)|<br/>
 # Conclusion on Validation Dataset
 ## Confusion Matrix
+### What is Confusion Matrix and why you need it?
+Well, it is a performance measurement for machine learning classification problem where output can be two or more classes. It is a table with 4 different combinations of predicted and actual values.
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/CM.png)
+
 |159|0|1|
 |:---:|:---:|:---:|
 |**03**|**39**|**41**|
@@ -20,7 +24,7 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 |**NORMAL**|**0.87**|**0.47**|**0.61**|
 |**PNEUMONIA**|**0.79**|**0.96**|**0.86**|<br/>
 ## GradCAM of input images:
-|Class: 'COVID19'|GradCAM|
+|Class: 'COVID19'|GradCAMhttps://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/CM.png|
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.jpeg)|
 |**Class: 'Pneumonia'**|**GradCAM**|
