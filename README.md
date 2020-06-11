@@ -20,7 +20,7 @@ It is extremely useful for measuring Recall, Precision, Specificity, Accuracy an
 **Interpretation**: You predicted positive and it’s false.
 #### False Negative: (Type 2 Error)
 **Interpretation**: You predicted negative and it’s false.
-## Confusion Matrix of Validation Data
+## Confusion Matrix of Validation Data:
 |159|0|1|
 |:---:|:---:|:---:|
 |**03**|**39**|**41**|
