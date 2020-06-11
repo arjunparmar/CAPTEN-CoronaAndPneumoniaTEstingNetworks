@@ -11,6 +11,16 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 ### What is Confusion Matrix and why you need it?
 Well, it is a performance measurement for machine learning classification problem where output can be two or more classes. It is a table with 4 different combinations of predicted and actual values.<br/>
 ![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/CM.png)<br/>
+It is extremely useful for measuring Recall, Precision, Specificity, Accuracy and most importantly AUC-ROC Curve.<br/>
+#### True Positive:
+**Interpretation**: You predicted positive and it’s true.
+#### True Negative:
+**Interpretation**: You predicted negative and it’s true.
+#### False Positive: (Type 1 Error)
+**Interpretation**: You predicted positive and it’s false.
+#### False Negative: (Type 2 Error)
+**Interpretation**: You predicted negative and it’s false.
+## Confusion Matrix of Validation Data
 |159|0|1|
 |:---:|:---:|:---:|
 |**03**|**39**|**41**|
