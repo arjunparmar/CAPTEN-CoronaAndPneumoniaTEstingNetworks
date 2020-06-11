@@ -6,9 +6,16 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 |Train Acc:98.17%|Test Acc:96.89%|
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Accuracy.png)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Loss.png)|<br/>
-# Conclusion
+# Conclusion on Validation Dataset
 ## Confusion Matrix
 |159|0|0|
 |:---:|:---:|:---:|
 |**03**|**39**|**41**|
 |**01**|**06**|**153**|<br/>
+## Accuracy Score: 0.87
+## Report:
+|Class|Precision|Recall|F1 Score|
+|:---:|:---:|:---:|:---:|
+|**COVID19**|**0.98**|**0.99**|**0.98**|
+|**NORMAL**|**0.87**|**0.47**|**0.61**|
+|**PNEUMONIA**|**0.79**|**0.96**|**0.86**|<br/>
