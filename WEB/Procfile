@@ -1,1 +1,1 @@
-web: gunicorn WEB.wsgi --log-file -
+web: gunicorn WEB.wsgi --log-file - --worker-class eventlet --timeout 120

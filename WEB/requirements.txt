@@ -52,6 +52,7 @@ django-resized==0.3.9
 djangorestframework==3.11.0
 # docutils==0.15.2
 # entrypoints==0.3
+eventlet==0.25.2
 # et-xmlfile==1.0.1
 # fastcache==1.1.0
 # filelock==3.0.12
@@ -130,7 +131,7 @@ matplotlib==3.1.1
 # notebook==6.0.1
 # numba==0.45.1
 # numexpr==2.7.0
-# numpy==1.17.2
+numpy==1.17.2
 # numpydoc==0.9.1
 # oauthlib==3.1.0
 # olefile==0.46
