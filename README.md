@@ -29,7 +29,7 @@ It is extremely useful for measuring Recall, Precision, Specificity, Accuracy an
 ## Report:
 ![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/precison.png)<br/>
 ![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/recall.png)<br/>
-![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/F1-score.png)<br/>
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/F1-measure.png)<br/>
 |Class|Precision|Recall|F1 Score|
 |:---:|:---:|:---:|:---:|
 |**COVID19**|**0.98**|**0.99**|**0.98**|
