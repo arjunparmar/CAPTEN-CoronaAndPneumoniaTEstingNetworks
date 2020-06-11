@@ -9,9 +9,8 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 # Conclusion on Validation Dataset
 ## Confusion Matrix
 ### What is Confusion Matrix and why you need it?
-Well, it is a performance measurement for machine learning classification problem where output can be two or more classes. It is a table with 4 different combinations of predicted and actual values.
-![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/CM.png)
-
+Well, it is a performance measurement for machine learning classification problem where output can be two or more classes. It is a table with 4 different combinations of predicted and actual values.<br/>
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/CM.png)<br/>
 |159|0|1|
 |:---:|:---:|:---:|
 |**03**|**39**|**41**|
