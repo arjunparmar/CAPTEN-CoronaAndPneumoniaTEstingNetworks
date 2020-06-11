@@ -19,3 +19,9 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 |**COVID19**|**0.98**|**0.99**|**0.98**|
 |**NORMAL**|**0.87**|**0.47**|**0.61**|
 |**PNEUMONIA**|**0.79**|**0.96**|**0.86**|<br/>
+## GradCAM of input images:
+|Class: COVID19|GradCAM|
+|:---:|:---:|
+|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.png)|
+|Class: Pneumonia|GradCAM|
+|||
