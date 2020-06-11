@@ -38,6 +38,13 @@ It is extremely useful for measuring Recall, Precision, Specificity, Accuracy an
 |**PNEUMONIA**|**0.79**|**0.96**|**0.86**|<br/>
 ## GradCAM of input images:
 ### Grad-CAM Reveals the "Why" Behind Deep Learning Decisions.
+Grad-CAM uses the gradients of any target concept (say logits for “dog” or even a caption), flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept.<br/>
+Using Grad-CAM, we can visually validate where our network is looking, verifying that it is indeed looking at the correct patterns in the image and activating around those patterns.<br/>
+If the network is not activating around the proper patterns/objects in the image, then we know:<br/>
+-->```Our network hasn’t properly learned the underlying patterns in our dataset```<br/>
+-->```Our training procedure needs to be revisited```<br/>
+-->```We may need to collect additional data ```<br/>
+And most importantly, our model is not ready for deployment.<br/>
 |Class: 'COVID19'|GradCAM|
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.jpeg)|
