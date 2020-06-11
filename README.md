@@ -8,18 +8,35 @@ The novel coronavirus 2019 (COVID-2019), which first appeared in Wuhan city of C
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Accuracy.png)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/Loss.png)|<br/>
 # Conclusion on Validation Dataset
 ## Confusion Matrix
+### What is Confusion Matrix and why you need it?
+Well, it is a performance measurement for machine learning classification problem where output can be two or more classes. It is a table with 4 different combinations of predicted and actual values.<br/>
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/CM.png)<br/>
+It is extremely useful for measuring Recall, Precision, Specificity, Accuracy and most importantly AUC-ROC Curve.<br/>
+#### True Positive:
+**Interpretation**: You predicted positive and it’s true.
+#### True Negative:
+**Interpretation**: You predicted negative and it’s true.
+#### False Positive: (Type 1 Error)
+**Interpretation**: You predicted positive and it’s false.
+#### False Negative: (Type 2 Error)
+**Interpretation**: You predicted negative and it’s false.
+## Confusion Matrix of Validation Data:
 |159|0|1|
 |:---:|:---:|:---:|
 |**03**|**39**|**41**|
 |**01**|**06**|**153**|<br/>
 ## Accuracy Score: 0.87
 ## Report:
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/precison.png)<br/>
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/recall.png)<br/>
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/F-measure.png)<br/>
 |Class|Precision|Recall|F1 Score|
 |:---:|:---:|:---:|:---:|
 |**COVID19**|**0.98**|**0.99**|**0.98**|
 |**NORMAL**|**0.87**|**0.47**|**0.61**|
 |**PNEUMONIA**|**0.79**|**0.96**|**0.86**|<br/>
 ## GradCAM of input images:
+### Grad-CAM Reveals the "Why" Behind Deep Learning Decisions.
 |Class: 'COVID19'|GradCAM|
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.jpeg)|
