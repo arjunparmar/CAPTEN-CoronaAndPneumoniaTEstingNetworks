@@ -27,7 +27,9 @@ It is extremely useful for measuring Recall, Precision, Specificity, Accuracy an
 |**01**|**06**|**153**|<br/>
 ## Accuracy Score: 0.87
 ## Report:
-<div style="text-align:center">![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/precison.png)<div/><br/>
+![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/precison.png)<div style="text-align:center"><img src="..." /></div>
+
+<br/>
 ![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/recall.png)<br/>
 ![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/F-measure.png)<br/>
 |Class|Precision|Recall|F1 Score|
