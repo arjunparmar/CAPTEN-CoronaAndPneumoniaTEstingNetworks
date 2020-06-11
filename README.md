@@ -36,6 +36,7 @@ It is extremely useful for measuring Recall, Precision, Specificity, Accuracy an
 |**NORMAL**|**0.87**|**0.47**|**0.61**|
 |**PNEUMONIA**|**0.79**|**0.96**|**0.86**|<br/>
 ## GradCAM of input images:
+### Grad-CAM Reveals the "Why" Behind Deep Learning Decisions.
 |Class: 'COVID19'|GradCAM|
 |:---:|:---:|
 |![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49x.jpeg)|![](https://github.com/arjunparmar/CAPTEN-CoronaAndPneumoniaTEstingNetworks/blob/master/Images/VC49.jpeg)|
