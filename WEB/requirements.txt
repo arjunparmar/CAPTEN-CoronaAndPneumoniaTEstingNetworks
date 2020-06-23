@@ -230,7 +230,7 @@ requests==2.22.0
 # tables==3.5.2
 # tblib==1.4.0
 # tensorboard==2.1.1
-tensorflow==1.15.0
+tensorflow==1.15.2
 # termcolor==1.1.0
 # terminado==0.8.2
 # testpath==0.4.2
