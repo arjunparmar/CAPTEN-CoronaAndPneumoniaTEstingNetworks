@@ -231,9 +231,6 @@ requests==2.22.0
 # tblib==1.4.0
 # tensorboard==2.1.1
 tensorflow==1.15.0
-tensorflow-estimator==1.15.1
-# tensorflow-hub==0.7.0
-# tensorflowjs==1.6.0
 # termcolor==1.1.0
 # terminado==0.8.2
 # testpath==0.4.2
