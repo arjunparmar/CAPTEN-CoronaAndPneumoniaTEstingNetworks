@@ -1,4 +1,3 @@
-from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from .models import Image
 import cv2
@@ -6,15 +5,11 @@ from . import forms
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import backend as K
-from tensorflow.keras.models import load_model,model_from_json
+from tensorflow.keras.models import load_model
 from keras.preprocessing.image import img_to_array
-from django.contrib import messages
-import base64
 import io
 import PIL
 import numpy as np
-import requests
-from flask import jsonify
 import os
 import datetime
 import time
@@ -22,7 +17,6 @@ from WEB.settings import BASE_DIR
 from WEB.settings import MEDIA_DIR
 from django.core.files.base import ContentFile
 from django.core.files import File
-from django.http.response import StreamingHttpResponse
 import matplotlib.pyplot as plt
 import threading
 import gzip
