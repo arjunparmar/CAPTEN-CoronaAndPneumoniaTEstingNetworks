@@ -2,11 +2,15 @@ from django.shortcuts import render
 from .models import Image
 import cv2
 from . import forms
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras import backend as K
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.image import img_to_array
+# import tensorflow as tf
+import keras
+# from tensorflow import keras
+from keras import backend as K
+# from tensorflow.keras import backend as K
+from keras.models import load_model
+# from tensorflow.keras.models import load_model
+from keras.preprocessing.image import img_to_array
+# from tensorflow.keras.preprocessing.image import img_to_array
 import io
 import PIL
 import numpy as np
