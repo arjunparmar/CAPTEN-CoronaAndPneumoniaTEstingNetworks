@@ -137,9 +137,9 @@ def predict_image(image,name_image):
         plt.imshow(cam, cmap='magma', alpha=0.5)
         plt.title("Features Extracted")
         plt.axis('off')
-        path = MEDIA_DIR + '/gradcam_images/gradcam.jpg'
+        path = MEDIA_DIR + 'gradcam_images/gradcam.jpg'                   #For deploying on heroku, change this path to just 'gradcam.jpg' as can't use plt.savefig() with relative path on heroku                      
         plt.savefig(path)
-        # print(name_image)
+        print(name_image)
         _,buffer_image1 = cv2.imencode('.jpeg', image1)
         f_image1 = buffer_image1.tobytes()
         f1 = ContentFile(f_image1)
@@ -181,7 +181,7 @@ def formpage(request):
             # print("next step")
             modified_image.save()
             if x1 == '0' or x1 == '2':
-                gradcam_img = cv2.imread(MEDIA_DIR + '/gradcam_images/gradcam.jpg')
+                gradcam_img = cv2.imread(MEDIA_DIR + '/gradcam_images/gradcam.jpg')                #For deploying on heroku, change this path to just 'gradcam.jpg' as can't use plt.savefig() with relative path on heroku
                 _,buffer_gradcam = cv2.imencode('.jpeg', gradcam_img)
                 f_image1 = buffer_gradcam.tobytes()
                 f1 = ContentFile(f_image1)
