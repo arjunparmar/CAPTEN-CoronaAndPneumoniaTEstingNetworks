@@ -46,7 +46,7 @@
 # defusedxml==0.6.0
 # distributed==2.5.2
 dj-database-url==0.5.0
-Django==2.2.5
+Django==2.2.13
 django-heroku==0.3.1
 django-resized==0.3.9
 djangorestframework==3.11.0
@@ -231,7 +231,7 @@ rq==1.7.0
 # sympy==1.4
 # tables==3.5.2
 # tblib==1.4.0
-tensorflow==1.15.2
+tensorflow==1.15.4
 # tensorboard==2.1.1
 # termcolor==1.1.0
 # terminado==0.8.2
