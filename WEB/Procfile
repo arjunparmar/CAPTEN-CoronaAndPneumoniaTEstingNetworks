@@ -1,1 +1,2 @@
 web: gunicorn WEB.wsgi --timeout 120 --preload
+worker : python predict/worker.py

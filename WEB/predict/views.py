@@ -17,11 +17,15 @@ from WEB.settings import BASE_DIR
 from WEB.settings import MEDIA_DIR
 from django.core.files.base import ContentFile
 from django.core.files import File
+from rq import Queue
+from .worker import conn
 import matplotlib.pyplot as plt
 import threading
 import gzip
 from threading import Thread, Lock
 _db_lock = Lock()
+
+q = Queue(connection=conn)
 
 def home_view(request):
     return render(request, 'home.html')
@@ -130,7 +134,11 @@ def predict_image(image,name_image):
         prediction = np.argmax(prediction)
         x1=str(prediction)
         print('x1 is : ' + x1)
-        cam = grad_cam(model, prepare2(image), prediction, 'conv5_block16_concat')
+        try :
+            cam = q.enqueue(grad_cam(model, prepare2(image), prediction, 'conv5_block16_concat'))
+        except : 
+            print('inside except')
+            cam = grad_cam(model, prepare2(image), prediction, 'conv5_block16_concat')
         im_path=image
         im_path = cv2.resize(im_path,(300,300))
         plt.imshow(im_path, cmap='gray')
